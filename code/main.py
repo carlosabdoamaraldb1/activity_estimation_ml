@@ -5,7 +5,16 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 from yellowbrick.classifier import ConfusionMatrix
 
+from models.dev import Developer, get_dev_by_name
+from models.instance import Instance
+from models.task import Task
+
+
 def main():
-    base = pd.read_csv("TASK_ESTIMATIVE_ML.csv")
+    instances: list[Instance] = []
+    d = get_dev_by_name("CARLOS_AMARAL")
 
     return
+
+
+main()
